@@ -3,6 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
    exit; // Exit if accessed directly
 }
 
+add_filter( 'the_content', 'gallery_filter_the_content_in_the_main_loop' );
 function gallery_filter_the_content_in_the_main_loop( $content ) {
 	$getpostopt = get_option('mg_data_posttypes');
 	if(empty($getpostopt)){
@@ -306,4 +307,3 @@ function gallery_filter_the_content_in_the_main_loop( $content ) {
 	}
 	return $content.$outputgal;
 }
-add_filter( 'the_content', 'gallery_filter_the_content_in_the_main_loop' );

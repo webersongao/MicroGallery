@@ -70,7 +70,6 @@ function micro_gallery_display_callback( $post ) {
 	    jQuery( function() {
 		    jQuery( "#micro-gallery-sortableitem" ).sortable();
 		  });
-	    	
 	    jQuery(document).on("click",'.micro-gallery-image-delete',function (e) {
 		    var tst = jQuery(this).parent().remove();
 		  });

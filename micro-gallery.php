@@ -47,7 +47,6 @@ add_action( 'admin_notices', 'micro_gallery_admin_notice__success' );
 
 /* Add setings link in the plugins page (beside the activate/deactivate links) */
 add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'mg_add_action_settings_link' );
-
 function mg_add_action_settings_link ( $links ) {
 	$mylinks = array('<a href="' . admin_url( 'edit.php?post_type=microgallery&page=gallery-settings' ) . '">设置</a>',);
 	return array_merge( $links, $mylinks );

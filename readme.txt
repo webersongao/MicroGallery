@@ -1,4 +1,4 @@
-=== Gallery with thumbnail slider ===
+=== Gallery Slider ===
 
 Contributors: galaxyweblinks
 Tags: gallery, slider, thumbnail, vertical slider 

@@ -67,11 +67,11 @@ function micro_gallery_display_callback_for_verticalslid($post){
 		$sliderPBottom = !empty($sliderPBottom) ? $sliderPBottom : '0px';
 ?>	
 	<div class="gallery-vertcleslide-container">	
+		<p><small><?php esc_html_e('❗️为了更好的效果，尽量图片宽高一致.', 'microgallery-slider'); ?></small></p>
 		<!-- Enable vertical gallery -->
 		<p class="enble_ver_box"><label for="vertical_slider"><strong><?php esc_html_e('竖向滚动','microgallery-slider'); ?></strong></label>
 				<input class="gallery-verti-checkbx" type="checkbox" id="enable_vrticle_gal" name="enable_vrticle_gal" value="1" <?php if(!empty(get_gallery_metavalue($meta_data, 'slider_vertical_key', true))){echo "checked"; } ?>>			
 		</p>
-		<p><small><?php esc_html_e('❗️为了更好的效果，尽量图片宽高一致.', 'microgallery-slider'); ?></small></p>
 		<!-- Enable zoom image -->
 		<p class="enble_ver_box"><label for="vertical_slider"><strong><?php esc_html_e('允许缩放','microgallery-slider'); ?></strong></label>
 				<input class="gallery-verti-checkbx" type="checkbox" name="enable_image_zoom" value="1" <?php if(!empty(get_gallery_metavalue($meta_data, 'image_zoom_key', true))){echo "checked"; } ?>>			
